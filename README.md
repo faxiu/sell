@@ -1,2 +1,2 @@
 # sell
-This is a demo, for learn spring-cloud
+This is a demo, for learn spring-cloud.
