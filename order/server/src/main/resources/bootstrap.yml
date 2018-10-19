@@ -7,6 +7,17 @@ spring:
         service-id: CONFIG
         enabled: true
       profile: dev
+    stream:
+      bindings:
+        myInput:
+          destination: myStream
+          group: order
+        myOutput:
+          destination: myStream
+        myInput2:
+          destination: myStream2
+        myOutput2:
+          destination: myStream2
 logging:
   level:
     org.springframework.cloud.bus: debug
