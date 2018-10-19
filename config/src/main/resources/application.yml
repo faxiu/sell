@@ -1,0 +1,21 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/faxiu/config-repo
+          username: faxiu
+          password: hekai2pyy
+          basedir: E:/study/sell/config/basedir
+management:
+  endpoints:
+    web:
+      exposure:
+        include: ["*"]
+
